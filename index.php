@@ -34,23 +34,15 @@
         </div>
       </nav>
 
-        <!-- hasan
-        judul
-        nama
-        no ktp
-        -->
+        <!-- hasan judul nama no ktp -->
 
-        <!-- taufik
-        Tanggal lahir
-        jenis Tiket
-        harga tiket
-        -->
 
-        <!-- adit
-        jumlah Tiket
-        total harga
-        tombol submit
-        -->
+        <!-- taufik Tanggal lahir jenis Tiket harga tiket -->
+
+
+        <!-- adit jumlah Tiket total harga tombol submit -->
+
+        
     </div>
 
 
