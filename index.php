@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,6 +10,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
     <script src="life.js"></script>
     <title>Formulir Pembelian Tiket</title>
+    <style media="screen">
+      .judul, .nama, .email, .nohp{
+        margin-top: 50px;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -35,6 +41,36 @@
       </nav>
 
         <!-- hasan judul nama no ktp -->
+      <div class="judul text-center">
+          <h4>Pemesanan Tiket Konser</h4>
+      </div>
+      <form method="GET" action="form.php" name="input">
+        <div class="nama">
+          <div class="row">
+            <div class="col">
+              <input type="text" name="first" value="" class="form-control" placeholder="First name">
+            </div>
+            <div class="col">
+              <input type="text" name="last" value="" class="form-control" placeholder="Last name">
+            </div>
+          </div>
+        </div>
+        <div class="email">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+        </div>
+        <div class="nohp">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Nomer KTP</label>
+            <input type="text" class="form-control" name="ktp" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your identity with anyone else.</small>
+          </div>
+        </div>
+        <button type="Submit" name="pilih" value="pilih" class="btn btn-info">Buy</button>
+      </form>
 
 
         <!-- taufik Tanggal lahir jenis Tiket harga tiket -->
@@ -42,7 +78,7 @@
 
         <!-- adit jumlah Tiket total harga tombol submit -->
 
-        
+
     </div>
 
 
