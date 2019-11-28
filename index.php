@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,6 +11,11 @@
     <script src="life.js"></script>
     <title>Formulir Pembelian Tiket</title>
 
+    <style media="screen">
+      .judul, .nama, .email, .nohp{
+        margin-top: 50px;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -36,13 +42,41 @@
       </nav>
 
         <!-- hasan judul nama no ktp -->
+      <div class="judul text-center">
+          <h4>Pemesanan Tiket Konser</h4>
+      </div>
+      <form method="GET" action="form.php" name="input">
+        <div class="nama">
+          <div class="row">
+            <div class="col">
+              <input type="text" name="first" value="" class="form-control" placeholder="First name">
+            </div>
+            <div class="col">
+              <input type="text" name="last" value="" class="form-control" placeholder="Last name">
+            </div>
+          </div>
+        </div>
+        <div class="email">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+        </div>
+        <div class="nohp">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Nomer KTP</label>
+            <input type="text" class="form-control" name="ktp" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your identity with anyone else.</small>
+          </div>
+        </div>
 
 
         <!-- taufik Tanggal lahir jenis Tiket harga tiket -->
-            <form action="form.php">
+
       <div class="form-group">
         <label for="exampleFormControlSelect1" name="tgl lahir">Tanggal Lahhir</label>
-        <select class="form-control" id="exampleFormControlSelect1">
+        <select class="form-control" name="lahir" id="exampleFormControlSelect1">
             <?php for ($i=1; $i <= 31 ; $i++) {
                echo "<option> $i </option>";
             } ?>
@@ -50,7 +84,7 @@
       </div>
       <div class="form-group">
         <label for="exampleFormControlSelect1" name="bulan madu">Bulan</label>
-        <select class="form-control" id="exampleFormControlSelect1">
+        <select class="form-control" name="bulan" id="exampleFormControlSelect1">
           <?php for ($i=1; $i <= 12 ; $i++) {
              echo "<option> $i </option>";
           } ?>
@@ -59,33 +93,35 @@
         </div>
         <div class="form-group">
           <label for="exampleFormControlSelect1" name="tgl lahir">Tahun Lahir</label>
-          <select class="form-control" id="exampleFormControlSelecet1">
+          <select class="form-control" name="tahun" id="exampleFormControlSelecet1">
               <?php for ($i=1800; $i <= 2019 ; $i++) {
                  echo "<option> $i </option>";
               } ?>
             </select>
         </div>
-          <label for="exampleFormControlSelect1" name="tiket">Info Tiket</label><br>
+          <label for="exampleFormControlSelect1">Info Tiket</label><br>
         <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="tiket" id="inlineRadio1" value="option1">
+        <input class="form-check-input" type="radio" name="tiket" id="inlineRadio1" value="VVIP">
         <label class="form-check-label" for="inlineRadio1">VVIP</label>
       </div>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="tiket" id="inlineRadio2">
+        <input class="form-check-input" type="radio" name="tiket" id="inlineRadio2" value="VVIP A">
         <label class="form-check-label" for="inlineRadio2">VVIP A</label>
       </div>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="tiket" id="inlineRadio2">
-        <label class="form-check-label" for="inlineRadio3">VVIP B</label>
+        <input class="form-check-input" type="radio" name="tiket" id="inlineRadio2" value="VVIP B">
+        <label class="form-check-label" for="inlineRadio2">VVIP B</label>
       </div>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="tiket" id="inlineRadio2">
-        <label class="form-check-label" for="inlineRadio4">VVIP C</label>
+        <input class="form-check-input" type="radio" name="tiket" id="inlineRadio2" value="VVIP C">
+        <label class="form-check-label" for="inlineRadio2">VVIP C</label>
       </div>
+
       <div class="form-group">
       <label for="exampleFormControlInput1" name="harga tiket">Harga Tiket</label>
-      <input type="email" class="form-control" name="harga tiket" id="exampleFormControlInput1" placeholder="Rp.50.000">
+      <input type="text" class="form-control" name="harga_tiket" id="exampleFormControlInput1" placeholder="Rp.50.000">
     </div>
+    <button type="submit" name="pilih" value="pilih">pilih</button>
     </form>
 
 
