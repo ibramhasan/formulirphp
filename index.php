@@ -38,11 +38,11 @@
 
 
         <!-- taufik Tanggal lahir jenis Tiket harga tiket -->
-
+        uye
 
         <!-- adit jumlah Tiket total harga tombol submit -->
 
-        
+
     </div>
 
 
