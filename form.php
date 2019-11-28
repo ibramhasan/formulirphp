@@ -24,6 +24,7 @@
             <th scope="col">Bulan</th>
             <th scope="col">Tahun Lahir</th>
             <th scope="col">Info Tiket</th>
+            <th scope="col">Harga Tiket</th>
             <th scope="col">Jumlah Tiket</th>
             <th scope="col">Total Harga</th>
 
@@ -46,6 +47,7 @@
               echo $_GET['tiket'];
             };?></td>
 
+            <td><?php echo $_GET['harga_tiket']; ?></td>
                 <td><?php echo $_GET['totaltiket']; ?></td>
                     <td><?php echo $_GET['totaltoket']; ?></td>
 

@@ -86,11 +86,12 @@
         <label for="exampleFormControlSelect1" name="bulan madu">Bulan</label>
         <select class="form-control" name="bulan" id="exampleFormControlSelect1">
           <?php
-              $bulan = ["Januari", "febuari", "maret" ,"mei"];
-                for ($bulan=0; $bulan <= 4 ; $bulan++) {
-                  echo "<option>$bulan</option>";
-                }
-              ?>
+
+            $bulan = ["januari", "februari", "maret","april","mei"];
+             foreach ($bulan as $tampil) {
+               echo "<option>$tampil</option>";
+             }
+             ?>
             </select>
         </div>
         <div class="form-group">
@@ -119,10 +120,10 @@
         <label class="form-check-label" for="inlineRadio2">VVIP C</label>
       </div>
 
-      <!-- <div class="form-group">
+      <div class="form-group">
       <label for="exampleFormControlInput1" name="harga tiket">Harga Tiket</label>
       <input type="text" class="form-control" name="harga_tiket" id="exampleFormControlInput1" placeholder="Rp.50.000">
-    </div> -->
+    </div>
 
 
 
