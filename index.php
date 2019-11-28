@@ -85,10 +85,12 @@
       <div class="form-group">
         <label for="exampleFormControlSelect1" name="bulan madu">Bulan</label>
         <select class="form-control" name="bulan" id="exampleFormControlSelect1">
-          <?php for ($i=1; $i <= 12 ; $i++) {
-             echo "<option> $i </option>";
-          } ?>
-
+          <?php
+              $bulan = ["Januari", "febuari", "maret" ,"mei"];
+                for ($bulan=; $bulan <= 4 ; $bulan++) {
+                  echo "<option>$bulan</option>";
+                }
+              ?>
             </select>
         </div>
         <div class="form-group">
