@@ -87,7 +87,7 @@
         <select class="form-control" name="bulan" id="exampleFormControlSelect1">
           <?php
               $bulan = ["Januari", "febuari", "maret" ,"mei"];
-                for ($bulan=; $bulan <= 4 ; $bulan++) {
+                for ($bulan=0; $bulan <= 4 ; $bulan++) {
                   echo "<option>$bulan</option>";
                 }
               ?>
