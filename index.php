@@ -10,16 +10,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
 
     <title>Formulir Pembelian Tiket</title>
-<<<<<<< HEAD
-
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <style media="screen">
       .judul, .nama, .email, .nohp{
         margin-top: 50px;
       }
     </style>
-=======
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
->>>>>>> adit
   </head>
   <body>
     <div class="container">
@@ -123,12 +119,10 @@
         <label class="form-check-label" for="inlineRadio2">VVIP C</label>
       </div>
 
-      <div class="form-group">
+      <!-- <div class="form-group">
       <label for="exampleFormControlInput1" name="harga tiket">Harga Tiket</label>
       <input type="text" class="form-control" name="harga_tiket" id="exampleFormControlInput1" placeholder="Rp.50.000">
-    </div>
-    <button type="submit" name="pilih" value="pilih">pilih</button>
-    </form>
+    </div> -->
 
 
 
@@ -170,11 +164,8 @@
         <!-- adit jumlah Tiket total harga tombol submit -->
 
 
-<<<<<<< HEAD
-=======
 
 
-        <form method="GET" action="form.php" name="input">
             <div class="form-group">
               <label for="exampleFormControlSelect1">Jumlah Ticket</label>
               <select name="totaltiket" class="form-control" id="totaltiket">
@@ -187,12 +178,12 @@
 
             <div class="form-group">
                 <label for="exampleFormControlInput1">Total Harga Tiket</label>
-                <input name="totaltiket" type="text" class="form-control" id="harga" value="Rp. 50.000">
+                <input name="totaltoket" type="text" class="form-control" id="harga" value="Rp. 50.000">
             </div>
 
             <button type="submit" class="btn btn-primary" name="input">Submit</button>
     </form>
->>>>>>> adit
+
     </div>
 
 
