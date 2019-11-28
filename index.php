@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
     <script src="life.js"></script>
     <title>Formulir Pembelian Tiket</title>
+
   </head>
   <body>
     <div class="container">
@@ -38,7 +39,58 @@
 
 
         <!-- taufik Tanggal lahir jenis Tiket harga tiket -->
-        uye
+            <form action="form.php">
+      <div class="form-group">
+        <label for="exampleFormControlSelect1" name="tgl lahir">Tanggal Lahhir</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+            <?php for ($i=1; $i <= 31 ; $i++) {
+               echo "<option> $i </option>";
+            } ?>
+          </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1" name="bulan madu">Bulan</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <?php for ($i=1; $i <= 12 ; $i++) {
+             echo "<option> $i </option>";
+          } ?>
+
+            </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1" name="tgl lahir">Tahun Lahir</label>
+          <select class="form-control" id="exampleFormControlSelecet1">
+              <?php for ($i=1800; $i <= 2019 ; $i++) {
+                 echo "<option> $i </option>";
+              } ?>
+            </select>
+        </div>
+          <label for="exampleFormControlSelect1" name="tiket">Info Tiket</label><br>
+        <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="tiket" id="inlineRadio1" value="option1">
+        <label class="form-check-label" for="inlineRadio1">VVIP</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="tiket" id="inlineRadio2">
+        <label class="form-check-label" for="inlineRadio2">VVIP A</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="tiket" id="inlineRadio2">
+        <label class="form-check-label" for="inlineRadio3">VVIP B</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="tiket" id="inlineRadio2">
+        <label class="form-check-label" for="inlineRadio4">VVIP C</label>
+      </div>
+      <div class="form-group">
+      <label for="exampleFormControlInput1" name="harga tiket">Harga Tiket</label>
+      <input type="email" class="form-control" name="harga tiket" id="exampleFormControlInput1" placeholder="Rp.50.000">
+    </div>
+    </form>
+
+
+
+
 
         <!-- adit jumlah Tiket total harga tombol submit -->
 
