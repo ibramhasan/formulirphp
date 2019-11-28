@@ -69,7 +69,6 @@
             <small id="emailHelp" class="form-text text-muted">We'll never share your identity with anyone else.</small>
           </div>
         </div>
-        <button type="Submit" name="pilih" value="pilih" class="btn btn-info">Buy</button>
       </form>
 
 
