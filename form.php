@@ -20,6 +20,7 @@
             <th scope="col">Last</th>
             <th scope="col">Email</th>
             <th scope="col">No Ktp</th>
+            <!-- nambah kolom yg lu kerjakan masing2 -->
           </tr>
         </thead>
         <tbody>
@@ -30,6 +31,7 @@
             <td><?php echo $_GET['last']; ?></td>
             <td><?php echo $_GET['email']; ?></td>
             <td><?php echo $_GET['ktp']; ?></td>
+              <!-- nambah kolom yg lu kerjakan masing2 -->
           </tr>
         </tbody>
       </table>
